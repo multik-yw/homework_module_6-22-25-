@@ -48,6 +48,17 @@ files = [
 python-dotenv = "*"
 
 [[package]]
+name = "listview"
+version = "0.1.0"
+description = ""
+optional = false
+python-versions = ">=3.8,<4.0"
+files = [
+    {file = "listview-0.1.0-py3-none-any.whl", hash = "sha256:3daa47cb34cc3692520967cf23876288ab5cd55c35e1fc98d84ecb5b832a7ccf"},
+    {file = "listview-0.1.0.tar.gz", hash = "sha256:e162e6edf4dc81accbf138ffd20c68d85526cdbd3832f17824ee68aac5996bc3"},
+]
+
+[[package]]
 name = "python-dotenv"
 version = "1.1.0"
 description = "Read key-value pairs from a .env file and set them as environment variables"
@@ -90,4 +101,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "df8e1c07a84545da31c2cc537d5ad8c9209a225e84cfb4bee6527817b576e9c6"
+content-hash = "507ff2ac897ad780a6b3ba0789fe59e48e5b97f9919cfb331a35baea3b2d0229"
