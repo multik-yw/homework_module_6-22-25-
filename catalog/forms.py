@@ -2,6 +2,7 @@ from django import forms
 from .models import Product
 from django.core.exceptions import ValidationError
 from config.settings import SPAM
+from users.forms import StyleFromMixin
 
 
 class ProductForm(forms.ModelForm):
@@ -55,3 +56,8 @@ class ProductForm(forms.ModelForm):
         if price < 0:
             raise ValidationError('Стоимость товара не может быть отрицательной')
         return price
+
+class ProductModeratorForm(StyleFromMixin, forms.ModelForm):
+    class Meta:
+        model = Product
+        fields = ['is_published', ]
