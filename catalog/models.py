@@ -17,6 +17,7 @@ class Category(models.Model):
 
 # Create your models here.
 class Product(models.Model):
+    objects = None
     name = models.CharField(max_length=150, verbose_name='Наименование')
     description = models.TextField(verbose_name='Описание')
     image = models.ImageField(upload_to='catalog/photo', verbose_name='Изображение', blank=True, null=True)
